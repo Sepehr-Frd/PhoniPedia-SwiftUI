@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CD4F4CD0B2268AF79A6E036 /* Pods_PhoniPedia__SwiftUI__PhoniPedia__SwiftUI_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F77C4C99434CCB65281A389 /* Pods_PhoniPedia__SwiftUI__PhoniPedia__SwiftUI_UITests.framework */; };
+		7BA7681806DB1FABE0537D47 /* Pods_PhoniPedia__SwiftUI_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528122E880D2647409A2BAC0 /* Pods_PhoniPedia__SwiftUI_.framework */; };
+		A8604D227C7AA2B615884C0A /* Pods_PhoniPedia__SwiftUI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C023D049E8FC1D36FAD732A2 /* Pods_PhoniPedia__SwiftUI_Tests.framework */; };
+		FE0E4D31282059B0003AE4BC /* PhoniPedia__SwiftUI_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E4D30282059B0003AE4BC /* PhoniPedia__SwiftUI_App.swift */; };
+		FE0E4D33282059B0003AE4BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E4D32282059B0003AE4BC /* HomeView.swift */; };
+		FE0E4D35282059B1003AE4BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0E4D34282059B1003AE4BC /* Assets.xcassets */; };
+		FE0E4D38282059B1003AE4BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0E4D37282059B1003AE4BC /* Preview Assets.xcassets */; };
+		FE356F722824296F00CC4D51 /* SingleProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE356F712824296F00CC4D51 /* SingleProductView.swift */; };
+		FE41EEC728259EEA00DDD2D6 /* SearchView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE41EEC628259EEA00DDD2D6 /* SearchView-ViewModel.swift */; };
+		FE5E6F1B2826A5A800BC38CB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5E6F1A2826A5A800BC38CB /* DataController.swift */; };
+		FE74B0E2282457BC00A2ACE5 /* Search.json in Resources */ = {isa = PBXBuildFile; fileRef = FE74B0DF282457BC00A2ACE5 /* Search.json */; };
+		FE74B0E3282457BC00A2ACE5 /* ApplePhones.json in Resources */ = {isa = PBXBuildFile; fileRef = FE74B0E0282457BC00A2ACE5 /* ApplePhones.json */; };
+		FE7BEFF228231C1F0033C83B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BEFF128231C1F0033C83B /* ContentView.swift */; };
+		FE7BEFF328231C1F0033C83B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BEFF128231C1F0033C83B /* ContentView.swift */; };
+		FE7BEFF428231C1F0033C83B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7BEFF128231C1F0033C83B /* ContentView.swift */; };
+		FEA5272A282078C4006575EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA52729282078C4006575EA /* Constants.swift */; };
+		FEA5272C28209631006575EA /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA5272B28209631006575EA /* CustomViews.swift */; };
+		FEB556552826BB9E0029809D /* SingleProductView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB556542826BB9E0029809D /* SingleProductView-ViewModel.swift */; };
+		FEB556572826BF200029809D /* FavoritesView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB556562826BF200029809D /* FavoritesView-ViewModel.swift */; };
+		FEB5565B2826C8230029809D /* PhoniPedia (SwiftUI).xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEB556582826C8060029809D /* PhoniPedia (SwiftUI).xcdatamodeld */; };
+		FEB5565C2826C8240029809D /* PhoniPedia (SwiftUI).xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEB556582826C8060029809D /* PhoniPedia (SwiftUI).xcdatamodeld */; };
+		FEB5565D2826C8250029809D /* PhoniPedia (SwiftUI).xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEB556582826C8060029809D /* PhoniPedia (SwiftUI).xcdatamodeld */; };
+		FECE6D4128216344004573AF /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE6D4028216344004573AF /* ProductsView.swift */; };
+		FECE6D43282173BD004573AF /* HomeView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE6D42282173BD004573AF /* HomeView-ViewModel.swift */; };
+		FECE6D45282176E6004573AF /* BrandsView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE6D44282176E6004573AF /* BrandsView-ViewModel.swift */; };
+		FECE6D47282176FB004573AF /* ProductsView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE6D46282176FB004573AF /* ProductsView-ViewModel.swift */; };
+		FECE6D4928217733004573AF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE6D4828217733004573AF /* SearchView.swift */; };
+		FECE6D4B28217747004573AF /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE6D4A28217747004573AF /* FavoritesView.swift */; };
+		FECE6D4D28217775004573AF /* SpecialFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE6D4C28217775004573AF /* SpecialFilterView.swift */; };
+		FED51E31282481890015D491 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED51E30282481890015D491 /* DetailsView.swift */; };
+		FED51E33282492250015D491 /* iPhoneSE.json in Resources */ = {isa = PBXBuildFile; fileRef = FED51E32282492250015D491 /* iPhoneSE.json */; };
+		FEF24D68282131D6003D06C8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF24D67282131D6003D06C8 /* Launch Screen.storyboard */; };
+		FEF24D6A28213309003D06C8 /* BrandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF24D6928213309003D06C8 /* BrandsView.swift */; };
+		FEF970E328211A08006A2D86 /* ProductApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF970DF28211A08006A2D86 /* ProductApi.swift */; };
+		FEF970E428211A08006A2D86 /* BrandApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF970E028211A08006A2D86 /* BrandApi.swift */; };
+		FEF970E528211A08006A2D86 /* SearchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF970E128211A08006A2D86 /* SearchApi.swift */; };
+		FEF970E628211A08006A2D86 /* SpecialFiltersApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF970E228211A08006A2D86 /* SpecialFiltersApi.swift */; };
+		FEF970E828211B96006A2D86 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF970E728211B96006A2D86 /* Structs.swift */; };
+		FEF970EA28211BB5006A2D86 /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF970E928211BB5006A2D86 /* DataSet.swift */; };
+		FEF970EC28211EA0006A2D86 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF970EB28211EA0006A2D86 /* Extensions.swift */; };
+		FEFB249828257B14003E42CB /* SpecialFilterView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFB249728257B14003E42CB /* SpecialFilterView-ViewModel.swift */; };
+		FEFB249C28257E5D003E42CB /* TopByFans.json in Resources */ = {isa = PBXBuildFile; fileRef = FEFB249928257E5D003E42CB /* TopByFans.json */; };
+		FEFB249D28257E5D003E42CB /* Latest.json in Resources */ = {isa = PBXBuildFile; fileRef = FEFB249A28257E5D003E42CB /* Latest.json */; };
+		FEFB249E28257E5D003E42CB /* TopByInterest.json in Resources */ = {isa = PBXBuildFile; fileRef = FEFB249B28257E5D003E42CB /* TopByInterest.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE0E4D43282059B1003AE4BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE0E4D25282059B0003AE4BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE0E4D2C282059B0003AE4BC;
+			remoteInfo = "PhoniPedia (SwiftUI)";
+		};
+		FE0E4D4D282059B1003AE4BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE0E4D25282059B0003AE4BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE0E4D2C282059B0003AE4BC;
+			remoteInfo = "PhoniPedia (SwiftUI)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BD6DA724ED9902E4AB8ABC5 /* Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests.debug.xcconfig"; path = "Target Support Files/Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests/Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1505C0FF82888F85DD9EEDE3 /* Pods-PhoniPedia (SwiftUI).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoniPedia (SwiftUI).release.xcconfig"; path = "Target Support Files/Pods-PhoniPedia (SwiftUI)/Pods-PhoniPedia (SwiftUI).release.xcconfig"; sourceTree = "<group>"; };
+		191DB6BB90CF2C8250F68780 /* Pods-PhoniPedia (SwiftUI).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoniPedia (SwiftUI).debug.xcconfig"; path = "Target Support Files/Pods-PhoniPedia (SwiftUI)/Pods-PhoniPedia (SwiftUI).debug.xcconfig"; sourceTree = "<group>"; };
+		528122E880D2647409A2BAC0 /* Pods_PhoniPedia__SwiftUI_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoniPedia__SwiftUI_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F77C4C99434CCB65281A389 /* Pods_PhoniPedia__SwiftUI__PhoniPedia__SwiftUI_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoniPedia__SwiftUI__PhoniPedia__SwiftUI_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C023D049E8FC1D36FAD732A2 /* Pods_PhoniPedia__SwiftUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhoniPedia__SwiftUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1CFD71FD7CC533C6E4608FA /* Pods-PhoniPedia (SwiftUI)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoniPedia (SwiftUI)Tests.release.xcconfig"; path = "Target Support Files/Pods-PhoniPedia (SwiftUI)Tests/Pods-PhoniPedia (SwiftUI)Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C51731FBD7E89E443E76BDA3 /* Pods-PhoniPedia (SwiftUI)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoniPedia (SwiftUI)Tests.debug.xcconfig"; path = "Target Support Files/Pods-PhoniPedia (SwiftUI)Tests/Pods-PhoniPedia (SwiftUI)Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4AEBEB5A50F5879D23B0486 /* Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests.release.xcconfig"; path = "Target Support Files/Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests/Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE0E4D2D282059B0003AE4BC /* PhoniPedia (SwiftUI).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PhoniPedia (SwiftUI).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0E4D30282059B0003AE4BC /* PhoniPedia__SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoniPedia__SwiftUI_App.swift; sourceTree = "<group>"; };
+		FE0E4D32282059B0003AE4BC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FE0E4D34282059B1003AE4BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE0E4D37282059B1003AE4BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE0E4D42282059B1003AE4BC /* PhoniPedia (SwiftUI)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PhoniPedia (SwiftUI)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0E4D4C282059B1003AE4BC /* PhoniPedia (SwiftUI)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PhoniPedia (SwiftUI)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE356F712824296F00CC4D51 /* SingleProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleProductView.swift; sourceTree = "<group>"; };
+		FE41EEC628259EEA00DDD2D6 /* SearchView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchView-ViewModel.swift"; sourceTree = "<group>"; };
+		FE5E6F1A2826A5A800BC38CB /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		FE74B0DF282457BC00A2ACE5 /* Search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Search.json; sourceTree = "<group>"; };
+		FE74B0E0282457BC00A2ACE5 /* ApplePhones.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ApplePhones.json; sourceTree = "<group>"; };
+		FE7BEFF128231C1F0033C83B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE7BEFF928232DAD0033C83B /* PhoniPedia--SwiftUI--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PhoniPedia--SwiftUI--Info.plist"; sourceTree = SOURCE_ROOT; };
+		FEA52729282078C4006575EA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FEA5272B28209631006575EA /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		FEB556542826BB9E0029809D /* SingleProductView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SingleProductView-ViewModel.swift"; sourceTree = "<group>"; };
+		FEB556562826BF200029809D /* FavoritesView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesView-ViewModel.swift"; sourceTree = "<group>"; };
+		FEB556592826C8060029809D /* PhoniPedia (SwiftUI).xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PhoniPedia (SwiftUI).xcdatamodel"; sourceTree = "<group>"; };
+		FECE6D4028216344004573AF /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		FECE6D42282173BD004573AF /* HomeView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView-ViewModel.swift"; sourceTree = "<group>"; };
+		FECE6D44282176E6004573AF /* BrandsView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrandsView-ViewModel.swift"; sourceTree = "<group>"; };
+		FECE6D46282176FB004573AF /* ProductsView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsView-ViewModel.swift"; sourceTree = "<group>"; };
+		FECE6D4828217733004573AF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FECE6D4A28217747004573AF /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		FECE6D4C28217775004573AF /* SpecialFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialFilterView.swift; sourceTree = "<group>"; };
+		FED51E30282481890015D491 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		FED51E32282492250015D491 /* iPhoneSE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = iPhoneSE.json; sourceTree = "<group>"; };
+		FEF24D67282131D6003D06C8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FEF24D6928213309003D06C8 /* BrandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsView.swift; sourceTree = "<group>"; };
+		FEF970DF28211A08006A2D86 /* ProductApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductApi.swift; sourceTree = "<group>"; };
+		FEF970E028211A08006A2D86 /* BrandApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandApi.swift; sourceTree = "<group>"; };
+		FEF970E128211A08006A2D86 /* SearchApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchApi.swift; sourceTree = "<group>"; };
+		FEF970E228211A08006A2D86 /* SpecialFiltersApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialFiltersApi.swift; sourceTree = "<group>"; };
+		FEF970E728211B96006A2D86 /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		FEF970E928211BB5006A2D86 /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		FEF970EB28211EA0006A2D86 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = "PhoniPedia (SwiftUI)/Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		FEFB249728257B14003E42CB /* SpecialFilterView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpecialFilterView-ViewModel.swift"; sourceTree = "<group>"; };
+		FEFB249928257E5D003E42CB /* TopByFans.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopByFans.json; sourceTree = "<group>"; };
+		FEFB249A28257E5D003E42CB /* Latest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Latest.json; sourceTree = "<group>"; };
+		FEFB249B28257E5D003E42CB /* TopByInterest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopByInterest.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE0E4D2A282059B0003AE4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BA7681806DB1FABE0537D47 /* Pods_PhoniPedia__SwiftUI_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0E4D3F282059B1003AE4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8604D227C7AA2B615884C0A /* Pods_PhoniPedia__SwiftUI_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0E4D49282059B1003AE4BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD4F4CD0B2268AF79A6E036 /* Pods_PhoniPedia__SwiftUI__PhoniPedia__SwiftUI_UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FFD2B30CE1DB3AA593AF7F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				528122E880D2647409A2BAC0 /* Pods_PhoniPedia__SwiftUI_.framework */,
+				6F77C4C99434CCB65281A389 /* Pods_PhoniPedia__SwiftUI__PhoniPedia__SwiftUI_UITests.framework */,
+				C023D049E8FC1D36FAD732A2 /* Pods_PhoniPedia__SwiftUI_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B153DC4FCB42E45FFCF0315D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				191DB6BB90CF2C8250F68780 /* Pods-PhoniPedia (SwiftUI).debug.xcconfig */,
+				1505C0FF82888F85DD9EEDE3 /* Pods-PhoniPedia (SwiftUI).release.xcconfig */,
+				0BD6DA724ED9902E4AB8ABC5 /* Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests.debug.xcconfig */,
+				D4AEBEB5A50F5879D23B0486 /* Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests.release.xcconfig */,
+				C51731FBD7E89E443E76BDA3 /* Pods-PhoniPedia (SwiftUI)Tests.debug.xcconfig */,
+				C1CFD71FD7CC533C6E4608FA /* Pods-PhoniPedia (SwiftUI)Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE0AF14228205F680060BD56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE5E6F1A2826A5A800BC38CB /* DataController.swift */,
+				FEF970E728211B96006A2D86 /* Structs.swift */,
+				FEF970E928211BB5006A2D86 /* DataSet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE0AF14328205F6F0060BD56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEF24D6928213309003D06C8 /* BrandsView.swift */,
+				FE7BEFF128231C1F0033C83B /* ContentView.swift */,
+				FEA5272B28209631006575EA /* CustomViews.swift */,
+				FED51E30282481890015D491 /* DetailsView.swift */,
+				FECE6D4A28217747004573AF /* FavoritesView.swift */,
+				FE0E4D32282059B0003AE4BC /* HomeView.swift */,
+				FEF24D67282131D6003D06C8 /* Launch Screen.storyboard */,
+				FECE6D4028216344004573AF /* ProductsView.swift */,
+				FECE6D4828217733004573AF /* SearchView.swift */,
+				FE356F712824296F00CC4D51 /* SingleProductView.swift */,
+				FECE6D4C28217775004573AF /* SpecialFilterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE0AF14428205F7C0060BD56 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FECE6D44282176E6004573AF /* BrandsView-ViewModel.swift */,
+				FECE6D42282173BD004573AF /* HomeView-ViewModel.swift */,
+				FECE6D46282176FB004573AF /* ProductsView-ViewModel.swift */,
+				FEFB249728257B14003E42CB /* SpecialFilterView-ViewModel.swift */,
+				FE41EEC628259EEA00DDD2D6 /* SearchView-ViewModel.swift */,
+				FEB556542826BB9E0029809D /* SingleProductView-ViewModel.swift */,
+				FEB556562826BF200029809D /* FavoritesView-ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FE0BD33F282115FF00C909C4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FEF970E028211A08006A2D86 /* BrandApi.swift */,
+				FEF970DF28211A08006A2D86 /* ProductApi.swift */,
+				FEF970E128211A08006A2D86 /* SearchApi.swift */,
+				FEF970E228211A08006A2D86 /* SpecialFiltersApi.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FE0E4D24282059B0003AE4BC = {
+			isa = PBXGroup;
+			children = (
+				FE0E4D2F282059B0003AE4BC /* PhoniPedia (SwiftUI) */,
+				FE7BEFF928232DAD0033C83B /* PhoniPedia--SwiftUI--Info.plist */,
+				FEB556582826C8060029809D /* PhoniPedia (SwiftUI).xcdatamodeld */,
+				FE0E4D2E282059B0003AE4BC /* Products */,
+				B153DC4FCB42E45FFCF0315D /* Pods */,
+				6FFD2B30CE1DB3AA593AF7F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE0E4D2E282059B0003AE4BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E4D2D282059B0003AE4BC /* PhoniPedia (SwiftUI).app */,
+				FE0E4D42282059B1003AE4BC /* PhoniPedia (SwiftUI)Tests.xctest */,
+				FE0E4D4C282059B1003AE4BC /* PhoniPedia (SwiftUI)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE0E4D2F282059B0003AE4BC /* PhoniPedia (SwiftUI) */ = {
+			isa = PBXGroup;
+			children = (
+				FE0AF14228205F680060BD56 /* Model */,
+				FE0AF14328205F6F0060BD56 /* View */,
+				FE0AF14428205F7C0060BD56 /* ViewModel */,
+				FE0BD33F282115FF00C909C4 /* Service */,
+				FE0E4D30282059B0003AE4BC /* PhoniPedia__SwiftUI_App.swift */,
+				FEA52729282078C4006575EA /* Constants.swift */,
+				FEF970EB28211EA0006A2D86 /* Extensions.swift */,
+				FE0E4D34282059B1003AE4BC /* Assets.xcassets */,
+				FE0E4D36282059B1003AE4BC /* Preview Content */,
+				FE74B0E5282457C700A2ACE5 /* TestJson */,
+			);
+			path = "PhoniPedia (SwiftUI)";
+			sourceTree = "<group>";
+		};
+		FE0E4D36282059B1003AE4BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E4D37282059B1003AE4BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE74B0E5282457C700A2ACE5 /* TestJson */ = {
+			isa = PBXGroup;
+			children = (
+				FEFB249A28257E5D003E42CB /* Latest.json */,
+				FEFB249928257E5D003E42CB /* TopByFans.json */,
+				FEFB249B28257E5D003E42CB /* TopByInterest.json */,
+				FED51E32282492250015D491 /* iPhoneSE.json */,
+				FE74B0E0282457BC00A2ACE5 /* ApplePhones.json */,
+				FE74B0DF282457BC00A2ACE5 /* Search.json */,
+			);
+			path = TestJson;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE0E4D2C282059B0003AE4BC /* PhoniPedia (SwiftUI) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0E4D56282059B1003AE4BC /* Build configuration list for PBXNativeTarget "PhoniPedia (SwiftUI)" */;
+			buildPhases = (
+				D28346AC20A8240238E6C3B2 /* [CP] Check Pods Manifest.lock */,
+				FE0E4D29282059B0003AE4BC /* Sources */,
+				FE0E4D2A282059B0003AE4BC /* Frameworks */,
+				FE0E4D2B282059B0003AE4BC /* Resources */,
+				9634947E1C26F7A5DDC7D692 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PhoniPedia (SwiftUI)";
+			productName = "PhoniPedia (SwiftUI)";
+			productReference = FE0E4D2D282059B0003AE4BC /* PhoniPedia (SwiftUI).app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE0E4D41282059B1003AE4BC /* PhoniPedia (SwiftUI)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0E4D59282059B1003AE4BC /* Build configuration list for PBXNativeTarget "PhoniPedia (SwiftUI)Tests" */;
+			buildPhases = (
+				DF88BAABED916FD83622A1A7 /* [CP] Check Pods Manifest.lock */,
+				FE0E4D3E282059B1003AE4BC /* Sources */,
+				FE0E4D3F282059B1003AE4BC /* Frameworks */,
+				FE0E4D40282059B1003AE4BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE0E4D44282059B1003AE4BC /* PBXTargetDependency */,
+			);
+			name = "PhoniPedia (SwiftUI)Tests";
+			productName = "PhoniPedia (SwiftUI)Tests";
+			productReference = FE0E4D42282059B1003AE4BC /* PhoniPedia (SwiftUI)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE0E4D4B282059B1003AE4BC /* PhoniPedia (SwiftUI)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0E4D5C282059B1003AE4BC /* Build configuration list for PBXNativeTarget "PhoniPedia (SwiftUI)UITests" */;
+			buildPhases = (
+				596AD900E86634079C9AE831 /* [CP] Check Pods Manifest.lock */,
+				FE0E4D48282059B1003AE4BC /* Sources */,
+				FE0E4D49282059B1003AE4BC /* Frameworks */,
+				FE0E4D4A282059B1003AE4BC /* Resources */,
+				3AA7446BCA8CB77DA96AE36B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE0E4D4E282059B1003AE4BC /* PBXTargetDependency */,
+			);
+			name = "PhoniPedia (SwiftUI)UITests";
+			productName = "PhoniPedia (SwiftUI)UITests";
+			productReference = FE0E4D4C282059B1003AE4BC /* PhoniPedia (SwiftUI)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE0E4D25282059B0003AE4BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					FE0E4D2C282059B0003AE4BC = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					FE0E4D41282059B1003AE4BC = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = FE0E4D2C282059B0003AE4BC;
+					};
+					FE0E4D4B282059B1003AE4BC = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = FE0E4D2C282059B0003AE4BC;
+					};
+				};
+			};
+			buildConfigurationList = FE0E4D28282059B0003AE4BC /* Build configuration list for PBXProject "PhoniPedia (SwiftUI)" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE0E4D24282059B0003AE4BC;
+			productRefGroup = FE0E4D2E282059B0003AE4BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE0E4D2C282059B0003AE4BC /* PhoniPedia (SwiftUI) */,
+				FE0E4D41282059B1003AE4BC /* PhoniPedia (SwiftUI)Tests */,
+				FE0E4D4B282059B1003AE4BC /* PhoniPedia (SwiftUI)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE0E4D2B282059B0003AE4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFB249D28257E5D003E42CB /* Latest.json in Resources */,
+				FEF24D68282131D6003D06C8 /* Launch Screen.storyboard in Resources */,
+				FE74B0E3282457BC00A2ACE5 /* ApplePhones.json in Resources */,
+				FED51E33282492250015D491 /* iPhoneSE.json in Resources */,
+				FE74B0E2282457BC00A2ACE5 /* Search.json in Resources */,
+				FEFB249C28257E5D003E42CB /* TopByFans.json in Resources */,
+				FE0E4D38282059B1003AE4BC /* Preview Assets.xcassets in Resources */,
+				FEFB249E28257E5D003E42CB /* TopByInterest.json in Resources */,
+				FE0E4D35282059B1003AE4BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0E4D40282059B1003AE4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0E4D4A282059B1003AE4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AA7446BCA8CB77DA96AE36B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests/Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests/Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests/Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		596AD900E86634079C9AE831 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9634947E1C26F7A5DDC7D692 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoniPedia (SwiftUI)/Pods-PhoniPedia (SwiftUI)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhoniPedia (SwiftUI)/Pods-PhoniPedia (SwiftUI)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhoniPedia (SwiftUI)/Pods-PhoniPedia (SwiftUI)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28346AC20A8240238E6C3B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhoniPedia (SwiftUI)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF88BAABED916FD83622A1A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhoniPedia (SwiftUI)Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE0E4D29282059B0003AE4BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE356F722824296F00CC4D51 /* SingleProductView.swift in Sources */,
+				FECE6D4B28217747004573AF /* FavoritesView.swift in Sources */,
+				FEB5565B2826C8230029809D /* PhoniPedia (SwiftUI).xcdatamodeld in Sources */,
+				FECE6D43282173BD004573AF /* HomeView-ViewModel.swift in Sources */,
+				FECE6D4928217733004573AF /* SearchView.swift in Sources */,
+				FE5E6F1B2826A5A800BC38CB /* DataController.swift in Sources */,
+				FE41EEC728259EEA00DDD2D6 /* SearchView-ViewModel.swift in Sources */,
+				FEA5272A282078C4006575EA /* Constants.swift in Sources */,
+				FEF970E528211A08006A2D86 /* SearchApi.swift in Sources */,
+				FECE6D4D28217775004573AF /* SpecialFilterView.swift in Sources */,
+				FEF970E828211B96006A2D86 /* Structs.swift in Sources */,
+				FEF970E428211A08006A2D86 /* BrandApi.swift in Sources */,
+				FED51E31282481890015D491 /* DetailsView.swift in Sources */,
+				FEF970E628211A08006A2D86 /* SpecialFiltersApi.swift in Sources */,
+				FEB556552826BB9E0029809D /* SingleProductView-ViewModel.swift in Sources */,
+				FEF970EA28211BB5006A2D86 /* DataSet.swift in Sources */,
+				FE0E4D33282059B0003AE4BC /* HomeView.swift in Sources */,
+				FE7BEFF228231C1F0033C83B /* ContentView.swift in Sources */,
+				FEF970EC28211EA0006A2D86 /* Extensions.swift in Sources */,
+				FEB556572826BF200029809D /* FavoritesView-ViewModel.swift in Sources */,
+				FEFB249828257B14003E42CB /* SpecialFilterView-ViewModel.swift in Sources */,
+				FEA5272C28209631006575EA /* CustomViews.swift in Sources */,
+				FEF24D6A28213309003D06C8 /* BrandsView.swift in Sources */,
+				FECE6D45282176E6004573AF /* BrandsView-ViewModel.swift in Sources */,
+				FECE6D47282176FB004573AF /* ProductsView-ViewModel.swift in Sources */,
+				FEF970E328211A08006A2D86 /* ProductApi.swift in Sources */,
+				FE0E4D31282059B0003AE4BC /* PhoniPedia__SwiftUI_App.swift in Sources */,
+				FECE6D4128216344004573AF /* ProductsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0E4D3E282059B1003AE4BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB5565C2826C8240029809D /* PhoniPedia (SwiftUI).xcdatamodeld in Sources */,
+				FE7BEFF328231C1F0033C83B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0E4D48282059B1003AE4BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB5565D2826C8250029809D /* PhoniPedia (SwiftUI).xcdatamodeld in Sources */,
+				FE7BEFF428231C1F0033C83B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE0E4D44282059B1003AE4BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE0E4D2C282059B0003AE4BC /* PhoniPedia (SwiftUI) */;
+			targetProxy = FE0E4D43282059B1003AE4BC /* PBXContainerItemProxy */;
+		};
+		FE0E4D4E282059B1003AE4BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE0E4D2C282059B0003AE4BC /* PhoniPedia (SwiftUI) */;
+			targetProxy = FE0E4D4D282059B1003AE4BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FE0E4D54282059B1003AE4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE0E4D55282059B1003AE4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE0E4D57282059B1003AE4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191DB6BB90CF2C8250F68780 /* Pods-PhoniPedia (SwiftUI).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "PhoniPedia\\ (SwiftUI)/Preview\\ Content";
+				DEVELOPMENT_TEAM = B4DT4W933D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PhoniPedia--SwiftUI--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sepehr-Frd.PhoniPedia--SwiftUI-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE0E4D58282059B1003AE4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1505C0FF82888F85DD9EEDE3 /* Pods-PhoniPedia (SwiftUI).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "PhoniPedia\\ (SwiftUI)/Preview\\ Content";
+				DEVELOPMENT_TEAM = B4DT4W933D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PhoniPedia--SwiftUI--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sepehr-Frd.PhoniPedia--SwiftUI-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE0E4D5A282059B1003AE4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C51731FBD7E89E443E76BDA3 /* Pods-PhoniPedia (SwiftUI)Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4DT4W933D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sepehr-Frd.PhoniPedia--SwiftUI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhoniPedia (SwiftUI).app/PhoniPedia (SwiftUI)";
+			};
+			name = Debug;
+		};
+		FE0E4D5B282059B1003AE4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1CFD71FD7CC533C6E4608FA /* Pods-PhoniPedia (SwiftUI)Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4DT4W933D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sepehr-Frd.PhoniPedia--SwiftUI-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhoniPedia (SwiftUI).app/PhoniPedia (SwiftUI)";
+			};
+			name = Release;
+		};
+		FE0E4D5D282059B1003AE4BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BD6DA724ED9902E4AB8ABC5 /* Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4DT4W933D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sepehr-Frd.PhoniPedia--SwiftUI-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PhoniPedia (SwiftUI)";
+			};
+			name = Debug;
+		};
+		FE0E4D5E282059B1003AE4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4AEBEB5A50F5879D23B0486 /* Pods-PhoniPedia (SwiftUI)-PhoniPedia (SwiftUI)UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4DT4W933D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sepehr-Frd.PhoniPedia--SwiftUI-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PhoniPedia (SwiftUI)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE0E4D28282059B0003AE4BC /* Build configuration list for PBXProject "PhoniPedia (SwiftUI)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0E4D54282059B1003AE4BC /* Debug */,
+				FE0E4D55282059B1003AE4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0E4D56282059B1003AE4BC /* Build configuration list for PBXNativeTarget "PhoniPedia (SwiftUI)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0E4D57282059B1003AE4BC /* Debug */,
+				FE0E4D58282059B1003AE4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0E4D59282059B1003AE4BC /* Build configuration list for PBXNativeTarget "PhoniPedia (SwiftUI)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0E4D5A282059B1003AE4BC /* Debug */,
+				FE0E4D5B282059B1003AE4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0E4D5C282059B1003AE4BC /* Build configuration list for PBXNativeTarget "PhoniPedia (SwiftUI)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0E4D5D282059B1003AE4BC /* Debug */,
+				FE0E4D5E282059B1003AE4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FEB556582826C8060029809D /* PhoniPedia (SwiftUI).xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FEB556592826C8060029809D /* PhoniPedia (SwiftUI).xcdatamodel */,
+			);
+			currentVersion = FEB556592826C8060029809D /* PhoniPedia (SwiftUI).xcdatamodel */;
+			path = "PhoniPedia (SwiftUI).xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FE0E4D25282059B0003AE4BC /* Project object */;
+}
